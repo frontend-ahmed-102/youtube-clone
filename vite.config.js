@@ -3,7 +3,7 @@ import {resolve} from "path";
 import { channel } from "diagnostics_channel";
 
 export default defineConfig({
-    base:"/youtube/",
+    base: "/youtube-clone/",
     build: {
         rollupOptions: {
             input: {
