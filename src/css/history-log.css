@@ -1,0 +1,36 @@
+.history-right-column {
+    background-color: white;
+    height: 560px;
+}
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    color: white;
+}
+
+.card:hover .play-btn {
+    display: inline;
+}
+
+.bi-x-lg {
+    position: absolute;
+    top: 10px;
+    right: 13px;
+    color: #2c3131c7;
+    cursor: pointer;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.card:hover .bi-x-lg {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.card:hover .card-top-image {
+    filter: brightness(0.7);
+}

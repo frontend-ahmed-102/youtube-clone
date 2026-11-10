@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css" integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/history-log.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <title>يوتيوبي - سجل المشاهدة</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container">
+        <button class="btn btn-primary me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <i class="bi bi-list"></i>
+        </button>
+        <a class="navbar-brand" href="/">
+          يوتيوبي
+          <span class="video-icon p-1 mx-1"><i class="bi bi-play-btn"></i></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto"></ul>
+          <form class="d-flex" role="search" action="search-results.html">
+            <input class="form-control me-2" type="search" placeholder="نص البحث..." aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit">بحث</button>
+          </form>
+          <a href="login.html" class="nav-link login ps-2">تسجيل الدخول</a>
+        </div>
+      </div>
+    </nav>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="list-group list-group-flash w-100 pt-4">
+        <a href="index.html" class="list-group-item list-group-item-action">
+          <i class="bi bi-house-door-fill"></i> الصفحة الرئيسية
+        </a>
+        <a href="index.html#suggested-videos" class="list-group-item list-group-item-action">
+          <i class="bi bi-compass"></i> الفيديوهات المقترحة
+        </a>
+        <a href="index.html#recent-videos" class="list-group-item list-group-item-action">
+          <i class="bi bi-plus-square"></i> المرفوعة حديثًا
+        </a>
+        <a href="index.html#trending-videos" class="list-group-item list-group-item-action">
+          <i class="bi bi-fire"></i> الفيديوهات الرائجة
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-play-btn-fill"></i> فيديوهاتي
+        </a>
+        <a href="history-log.html" class="list-group-item list-group-item-action">
+          <i class="bi bi-clock-history"></i> سجل المشاهدة
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-collection-play"></i> الإشتراكات
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-film"></i> الأفلام والعروض
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-controller"></i> ألعاب الفيديو
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-handbag"></i> الموضة والجمال
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-mortarboard"></i> محتوى تعليمي
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-gear-fill"></i> الإعدادات
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-question-circle-fill"></i> مساعدة
+        </a>
+        <a href="https://academy.hsoub.com/" class="list-group-item list-group-item-action small text-muted border-bottom-0">
+        دورة تطوير واجهات المستخدم <br> &copy; 2026 أكاديمية حسوب 
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="mt-5 mb-4 d-inline-block"></div>
+      <div class="row">
+        <div class="col-lg-3 history-right-column">
+          <input type="text" type="search" placeholder="ابحث في النتائج" class="form-control my-3 border-0">
+          <hr>
+          <label class="mb-2">نوع السجل:</label>
+          <div class="list-group list-group-flush pe-0" id="list-tab">
+            <a href="#list-home" class="list-group-item list-group-item-action active" data-bs-toggle="list">سجل المشاهدة</a>
+            <a href="#list-home" class="list-group-item list-group-item-action" data-bs-toggle="list">سجل البحث</a>
+            <a href="#list-home" class="list-group-item list-group-item-action" data-bs-toggle="list">التعليقات</a>
+            <a href="#list-home" class="list-group-item list-group-item-action" data-bs-toggle="list">المنتدى</a>
+          </div>
+          <label class="mb-2 mt-4">التاريخ:</label>
+          <div class="list-group list-group-flush pe-0" id="list-tab">
+            <a href="#list-home" class="list-group-item list-group-item-action active" data-bs-toggle="list">منذ 24 ساعة</a>
+            <a href="#list-home" class="list-group-item list-group-item-action" data-bs-toggle="list">منذ 3 أيام</a>
+            <a href="#list-home" class="list-group-item list-group-item-action" data-bs-toggle="list">منذ أسبوع</a>
+            <a href="#list-home" class="list-group-item list-group-item-action" data-bs-toggle="list">منذ شهر</a>
+          </div>
+        </div>
+        <div class="col-lg-9 pt-5 pt-lg-0">
+          <div class="card mb-3">
+            <div class="card-horizontal d-md-flex d-block">
+              <div class="col-md-5 col-xl-4 position-relative overflow-hidden">
+                <a href="watch.html">
+                  <img src="/img/thumbnail/devtools.jpg" alt="" class="me-4 card-top-image w-100 h-100 object-fit-cover">
+                  <time datetime="">7:33</time>
+                  <i class="bi bi-play-btn play-btn fs-1"></i>
+                  <i class="bi bi-clock watch-later"></i>
+                </a>
+                <i class="bi bi-x-lg remove fs-5"></i>
+              </div>
+              <div class="col-md-7 col-xl-8 card-body">
+                <a href="watch.html"><h4>كيف تستخدم أدوات المطوِّر DevTools في Chrome</h4></a>
+                <p>نتعرف في هذا الدرس على أدوات المطور DevTools التي يتيحها متصفح google chrome والتي تمكنك من تتبع مشاكل التنسيق CSS بفعالية، واكتشاف أخطاء Javascript بسهولة، بالإضافة إلى أنها تقدم لك إضاءات ومعلومات حول أداء الموقع.</p>
+                <small class="text-muted">
+                  <i class="bi bi-play-btn"></i> <span>1 مليون مشاهدة</span>
+                  <i class="bi bi-clock ms-1"></i> <span>قبل 9 أشهر</span>
+                </small>
+                <a href="channel.html" class="channel-img d-inline-block mx-2">
+                  <img src="/img/ch-logo.png" alt="" width="30" class="rounded-circle">
+                  <span class="card-text">أكاديمية حسوب</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-horizontal d-md-flex d-block">
+              <div class="col-md-5 col-xl-4 position-relative overflow-hidden">
+                <a href="watch.html">
+                  <img src="/img/thumbnail/khamsat3.png" alt="" class="me-4 card-top-image w-100 h-100 object-fit-cover">
+                  <time datetime="">7:33</time>
+                  <i class="bi bi-play-btn play-btn fs-1"></i>
+                  <i class="bi bi-clock watch-later"></i>
+                </a>
+                <i class="bi bi-x-lg remove fs-5"></i>
+              </div>
+              <div class="col-md-7 col-xl-8 card-body">
+                <a href="watch.html"><h4>خطوات بسيطة للتسجيل بموقع خمسات والبدء بربح المال</h4></a>
+                <p>ستتعرف من خلال هذا الدرس على كيفية إنشاء حساب في موقع خمسات، وأيضًا ستتعرف على كيفية استعمال موقع خمسات وكيف تعرض خدماتك عليه لكي تربح المال</p>
+                <small class="text-muted">
+                  <i class="bi bi-play-btn"></i> <span>1 مليون مشاهدة</span>
+                  <i class="bi bi-clock ms-1"></i> <span>قبل 9 أشهر</span>
+                </small>
+                <a href="channel.html" class="channel-img d-inline-block mx-2">
+                  <img src="/img/khamsat.jpg" alt="" width="30" class="rounded-circle">
+                  <span class="card-text">خمسات</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-horizontal d-md-flex d-block">
+              <div class="col-md-5 col-xl-4 position-relative overflow-hidden">
+                <a href="watch.html">
+                  <img src="/img/thumbnail/frontend.jpg" alt="" class="me-4 card-top-image w-100 h-100 object-fit-cover">
+                  <time datetime="">7:33</time>
+                  <i class="bi bi-play-btn play-btn fs-1"></i>
+                  <i class="bi bi-clock watch-later"></i>
+                </a>
+                <i class="bi bi-x-lg remove fs-5"></i>
+              </div>
+              <div class="col-md-7 col-xl-8 card-body">
+                <a href="watch.html"><h4>دورة تطوير واجهات المستخدم - أكاديمية حسوب</h4></a>
+                <p>تم إعداد هذه الدورة على يد نخبة من أفضل المبرمجين العرب بتسلسل بسيط وواضح، بإنهائك لها ستصبح مطوّر واجهات مستخدم دون الحاجة لامتلاك معرفة سابقة بالبرمجة، خلال هذه ستتعلم تطوير واجهات المستخدم خطوة بخطوة اعتمادًا على التجربة العملية والمادة العلمية التي يقدمها مدربون محترفون.</p>
+                <small class="text-muted">
+                  <i class="bi bi-play-btn"></i> <span>1 مليون مشاهدة</span>
+                  <i class="bi bi-clock ms-1"></i> <span>قبل 9 أشهر</span>
+                </small>
+                <a href="channel.html" class="channel-img d-inline-block mx-2">
+                  <img src="/img/ch-logo.png" alt="" width="30" class="rounded-circle">
+                  <span class="card-text">أكاديمية حسوب</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-horizontal d-md-flex d-block">
+              <div class="col-md-5 col-xl-4 position-relative overflow-hidden">
+                <a href="watch.html">
+                  <img src="/img/thumbnail/khamsat1.png" alt="" class="me-4 card-top-image w-100 h-100 object-fit-cover">
+                  <time datetime="">7:33</time>
+                  <i class="bi bi-play-btn play-btn fs-1"></i>
+                  <i class="bi bi-clock watch-later"></i>
+                </a>
+                <i class="bi bi-x-lg remove fs-5"></i>
+              </div>
+              <div class="col-md-7 col-xl-8 card-body">
+                <a href="watch.html"><h4>تعلم كيف تقدم مهاراتك على موقع خمسات</h4></a>
+                <p>ستتعلم في هذا الدرس كيفية ربح مبالغ كبيرة من خلال تقديم مهاراتك على موقع خمسات، عند مشاهدتك لهذا المقطع واتباعك الخطوات بشكل جيد سيصل ربحك إلى 100$ يوميًا</p>
+                <small class="text-muted">
+                  <i class="bi bi-play-btn"></i> <span>1.2 مليون مشاهدة</span>
+                  <i class="bi bi-clock ms-1"></i> <span>قبل 4 أشهر</span>
+                </small>
+                <a href="channel.html" class="channel-img d-inline-block mx-2">
+                  <img src="/img/khamsat.jpg" alt="" width="30" class="rounded-circle">
+                  <span class="card-text">خمسات</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-horizontal d-md-flex d-block">
+              <div class="col-md-5 col-xl-4 position-relative overflow-hidden">
+                <a href="watch.html">
+                  <img src="/img/thumbnail/mostaql.png" alt="" class="me-4 card-top-image w-100 h-100 object-fit-cover">
+                  <time datetime="">2:40</time>
+                  <i class="bi bi-play-btn play-btn fs-1"></i>
+                  <i class="bi bi-clock watch-later"></i>
+                </a>
+                <i class="bi bi-x-lg remove fs-5"></i>
+              </div>
+              <div class="col-md-7 col-xl-8 card-body">
+                <a href="watch.html"><h4>وظف أفضل المستقلين الموجودين في الوطن العربي - مستقل</h4></a>
+                <p>تعلم كيفية التواصل مع المستقلين الموجودين في مختلف البلدان العربية، وكيفية اختيار أفضل مستقل وتوظيفه لإنجاز أعمالك</p>
+                <small class="text-muted">
+                  <i class="bi bi-play-btn"></i> <span>1 مليون مشاهدة</span>
+                  <i class="bi bi-clock ms-1"></i> <span>قبل 9 أشهر</span>
+                </small>
+                <a href="channel.html" class="channel-img d-inline-block mx-2">
+                  <img src="/img/mostaql.png" alt="" width="30" class="rounded-circle">
+                  <span class="card-text">مستقل</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/js/history-log.js"></script>
+  </body>
+</html>

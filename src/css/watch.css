@@ -1,0 +1,19 @@
+.card{
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
+}
+
+.dropdown-menu{
+    transition: 0s !important;
+}
+
+.public-comments .card .btn{
+ background-color: #921192;
+ border-color: #921192;
+ color: white;
+
+}
+
+
+.public-comments .card .btn:hover{
+    background-color: #b915b9;
+}

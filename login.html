@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css" integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/watch.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <title>يوتيوبي - تسجيل الدخول</title>
+  </head>
+  <body class="bg-light d-flex align-items-center justify-content-center vh-100">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container">
+        <button class="btn btn-primary me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <i class="bi bi-list"></i>
+        </button>
+        <a class="navbar-brand" href="/">
+          يوتيوبي
+          <span class="video-icon p-1 mx-1"><i class="bi bi-play-btn"></i></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto"></ul>
+          <form class="d-flex" role="search" action="search-results.html">
+            <input class="form-control me-2" type="search" placeholder="نص البحث..." aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit">بحث</button>
+          </form>
+          <a href="login.html" class="nav-link login ps-2">تسجيل الدخول</a>
+        </div>
+      </div>
+    </nav>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="list-group list-group-flash w-100 pt-4">
+        <a href="index.html" class="list-group-item list-group-item-action">
+          <i class="bi bi-house-door-fill"></i> الصفحة الرئيسية
+        </a>
+        <a href="index.html#suggested-videos" class="list-group-item list-group-item-action">
+          <i class="bi bi-compass"></i> الفيديوهات المقترحة
+        </a>
+        <a href="index.html#recent-videos" class="list-group-item list-group-item-action">
+          <i class="bi bi-plus-square"></i> المرفوعة حديثًا
+        </a>
+        <a href="index.html#trending-videos" class="list-group-item list-group-item-action">
+          <i class="bi bi-fire"></i> الفيديوهات الرائجة
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-play-btn-fill"></i> فيديوهاتي
+        </a>
+        <a href="history-log.html" class="list-group-item list-group-item-action">
+          <i class="bi bi-clock-history"></i> سجل المشاهدة
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-collection-play"></i> الإشتراكات
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-film"></i> الأفلام والعروض
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-controller"></i> ألعاب الفيديو
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-handbag"></i> الموضة والجمال
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-mortarboard"></i> محتوى تعليمي
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-gear-fill"></i> الإعدادات
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-question-circle-fill"></i> مساعدة
+        </a>
+        <a href="https://academy.hsoub.com/" class="list-group-item list-group-item-action small text-muted border-bottom-0">
+        دورة تطوير واجهات المستخدم <br> &copy; 2026 أكاديمية حسوب 
+        </a>
+      </div>
+    </div>
+    <div class="card shadow-lg p-4 border-0" style="max-width: 380px; width: 100%;">
+      <h4 class="text-center mb-4 fw-bold content-title">تسجيل الدخول</h4>
+      <form>
+        <div class="mb-3">
+          <label for="" class="form-label">البريد الإلكتروني</label>
+          <input type="email" class="form-control" placeholder="example@email.com" required>
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">كلمة المرور</label>
+          <input type="password" class="form-control" placeholder="******" required>
+        </div>
+        <div class="text-end mb-3">
+          <a href="forget-password.html" class="text-decoration-none">نسيت كلمة المرور؟</a>
+        </div>
+        <div class="d-grid mb-3">
+          <button type="submit" class="btn btn-primary btn-create">تسجيل الدخول</button>
+        </div>
+        <p class="text-center mb-0">
+          ليس لديك حساب؟
+          <a href="signup.html" class="text-decoration-none">إنشاء حساب</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>

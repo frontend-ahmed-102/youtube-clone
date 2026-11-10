@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css" integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/watch.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <title>يوتيوبي - صفحة المشاهدة</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container">
+        <button class="btn btn-primary me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <i class="bi bi-list"></i>
+        </button>
+        <a class="navbar-brand" href="/">
+          يوتيوبي
+          <span class="video-icon p-1 mx-1"><i class="bi bi-play-btn"></i></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto"></ul>
+          <form class="d-flex" role="search" action="search-results.html">
+            <input class="form-control me-2" type="search" placeholder="نص البحث..." aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit">بحث</button>
+          </form>
+          <a href="login.html" class="nav-link login ps-2">تسجيل الدخول</a>
+        </div>
+      </div>
+    </nav>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="list-group list-group-flash w-100 pt-4">
+        <a href="index.html" class="list-group-item list-group-item-action">
+          <i class="bi bi-house-door-fill"></i> الصفحة الرئيسية
+        </a>
+        <a href="index.html#suggested-videos" class="list-group-item list-group-item-action">
+          <i class="bi bi-compass"></i> الفيديوهات المقترحة
+        </a>
+        <a href="index.html#recent-videos" class="list-group-item list-group-item-action">
+          <i class="bi bi-plus-square"></i> المرفوعة حديثًا
+        </a>
+        <a href="index.html#trending-videos" class="list-group-item list-group-item-action">
+          <i class="bi bi-fire"></i> الفيديوهات الرائجة
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-play-btn-fill"></i> فيديوهاتي
+        </a>
+        <a href="history-log.html" class="list-group-item list-group-item-action">
+          <i class="bi bi-clock-history"></i> سجل المشاهدة
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-collection-play"></i> الإشتراكات
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-film"></i> الأفلام والعروض
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-controller"></i> ألعاب الفيديو
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-handbag"></i> الموضة والجمال
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-mortarboard"></i> محتوى تعليمي
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-gear-fill"></i> الإعدادات
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="bi bi-question-circle-fill"></i> مساعدة
+        </a>
+        <a href="https://academy.hsoub.com/" class="list-group-item list-group-item-action small text-muted border-bottom-0">
+        دورة تطوير واجهات المستخدم <br> &copy; 2026 أكاديمية حسوب 
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="mt-5 mb-4 d-inline-block"></div>
+      <div class="card border-0 mt-4">
+        <div class="row">
+          <div class="col-lg-7">
+            <video controls poster="/img/poster.png" muted loop class="w-100 align-middle p-0">
+              <source src="/video/hsoub.webm" type="video/webm">
+              <source src="/video/hsoub.mp4" type="video/mp4">
+              <track kind="captions" src="/video/caption.vtt" srclang="ar" label="عربي"></track>
+              لا يدعم متصفك العنصر
+            </video>
+          </div>
+          <div class="col-lg-5">
+            <div class="card-block px-3 py-2 p-lg-0">
+              <small class="text-muted">
+                <i class="bi bi-play-btn"></i> <span>200 ألف مشاهدة</span>
+                <i class="bi bi-clock ps-2"></i> <span>قبل 4 أشهر</span>
+                <a href="channel.html" class="channel-img">
+                  <img src="/img/ch-logo.png" alt="" class="rounded-circle my-2 ms-3" width="30">
+                  <span class="card-text ps-2">أكاديمية حسوب</span>
+                </a> 
+              </small>
+              <h4>دورة تطوير واجهات المستخدم - أكاديمية حسوب</h4>
+              <p>تم إعداد هذه الدورة على يد نخبة من أفضل المبرمجين العرب بتسلسل بسيط وواضح، بإنهائك لها ستصبح مطوّر
+                <span id="dots">...</span><span id="more"> واجهات مستخدم دون الحاجة لامتلاك معرفة سابقة بالبرمجة، خلال هذه ستتعلم تطوير واجهات المستخدم خطوة بخطوة اعتمادًا على التجربة العملية والمادة العلمية التي يقدمها مدربون محترفون.
+                </span>
+              </p>
+              <button class="btn mb-4" id="myBtn">عرض المزيد</button>
+              <div>
+                <i class="bi bi-heart fs-3 px-1" title="أحببته"></i>
+                <i class="bi bi-clock fs-3 px-1" title="المشاهدة لاحقًا"></i>
+                <i class="bi bi-share fs-3 px-1" title="مشاركة"></i>
+                <i class="bi bi-bookmark fs-3 px-1" title="إضافة إلى قائمة تشغيل"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4 px-2">
+        <div class="col-xl-7 order-2 order-xl-1">
+          <div class="mb-3">
+            <span>التعليقات 4</span>
+            <span class="dropdowm">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">الترتيب حسب</button>
+              <div class="dropdown-menu" style="right: 0">
+                <a class="dropdown-item">التاريخ</a>
+                <a class="dropdown-item">الأبجدية</a>
+              </div>
+            </span>
+          </div>
+          <div class="public-comments">
+            <textarea class="form-control" rows="4" placeholder="إضافة تعليق عام"></textarea>
+            <button type="submit" class="btn bnt-info mt-3">تعليق</button>
+            <div class="card mt-5 mb-3">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-2 col-12 text-center">
+                    <img src="/img/avatar.jpg" alt="" class="img-rounded img-floud" style="max-width: 6rem; width: 100%;">
+                    <p>منذ 40 دقيقة</p>
+                  </div>
+                  <div class="col-sm-10 col-12">
+                    <div class="d-block float-end">
+                      <span><i class="bi bi-star-fill"></i></span>
+                      <span><i class="bi bi-star-fill"></i></span>
+                      <span><i class="bi bi-star-fill"></i></span>
+                      <span><i class="bi bi-star"></i></span>
+                      <span><i class="bi bi-star"></i></span>
+                    </div>
+                    <p class="mb-1">
+                      <a href="#"> <strong>أحمد أحمد</strong> </a>
+                    </p>
+                    <p>مرحبًا، شكرًا لكم على هذه الدورة الرائعة</p>
+                    <div class="mt-4">
+                      <a class="btn btn-info btn-text-white reply">
+                        <i class="bi bi-reply"></i> الردود
+                      </a>
+                      <a href="#" class="btn btn-info btn-text-white">
+                        <i class="bi bi-heart"></i> أعجبني
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-inner ms-5 mt-3">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-sm-2 col-12 text-center">
+                        <img src="/img/avatar.jpg" alt="" class="img-rounded img-floud" style="max-width: 6rem; width: 100%;">
+                        <p>منذ 40 دقيقة</p>
+                      </div>
+                      <div class="col-sm-10 col-12">
+                        <p class="mb-1">
+                          <a href="#"> <strong>أحمد أحمد</strong> </a>
+                        </p>
+                        <p>مرحبًا، شكرًا لكم على هذه الدورة الرائعة</p>
+                        <div class="mt-4">
+                          <a href="#" class="btn btn-info btn-text-white">
+                            <i class="bi bi-heart"></i> أعجبني
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="card mt-5 mb-3">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-2 col-12 text-center">
+                    <img src="/img/avatar.jpg" alt="" class="img-rounded img-floud" style="max-width: 6rem; width: 100%;">
+                    <p>منذ 40 دقيقة</p>
+                  </div>
+                  <div class="col-sm-10 col-12">
+                    <div class="d-block float-end">
+                      <span><i class="bi bi-star-fill"></i></span>
+                      <span><i class="bi bi-star-fill"></i></span>
+                      <span><i class="bi bi-star-fill"></i></span>
+                      <span><i class="bi bi-star"></i></span>
+                      <span><i class="bi bi-star"></i></span>
+                    </div>
+                    <p class="mb-1">
+                      <a href="#"> <strong>محمد أحمد</strong> </a>
+                    </p>
+                    <p>جميل جدًا من أفضل الدورات التي شاهدتها. شكرًا لجهودكم</p>
+                    <div class="mt-4">
+                      <a class="btn btn-info btn-text-white reply">
+                        <i class="bi bi-reply"></i> الردود
+                      </a>
+                      <a href="#" class="btn btn-info btn-text-white">
+                        <i class="bi bi-heart"></i> أعجبني
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-inner ms-5 mt-3">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-sm-2 col-12 text-center">
+                        <img src="/img/avatar.jpg" alt="" class="img-rounded img-floud" style="max-width: 6rem; width: 100%;">
+                        <p>منذ 40 دقيقة</p>
+                      </div>
+                      <div class="col-sm-10 col-12">
+                        <p class="mb-1">
+                          <a href="#"> <strong>أحمد أحمد</strong> </a>
+                        </p>
+                        <p>مرحبًا، شكرًا لكم على هذه الدورة الرائعة</p>
+                        <div class="mt-4">
+                          <a href="#" class="btn btn-info btn-text-white">
+                            <i class="bi bi-heart"></i> أعجبني
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mt-5 mb-3">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-2 col-12 text-center">
+                    <img src="/img/avatar.jpg" alt="" class="img-rounded img-floud" style="max-width: 6rem; width: 100%;">
+                    <p>منذ 40 دقيقة</p>
+                  </div>
+                  <div class="col-sm-10 col-12">
+                    <div class="d-block float-end">
+                      <span><i class="bi bi-star-fill"></i></span>
+                      <span><i class="bi bi-star-fill"></i></span>
+                      <span><i class="bi bi-star-fill"></i></span>
+                      <span><i class="bi bi-star"></i></span>
+                      <span><i class="bi bi-star"></i></span>
+                    </div>
+                    <p class="mb-1">
+                      <a href="#"> <strong>هادي</strong> </a>
+                    </p>
+                    <p>جميل جدًا دورة رائعة</p>
+                    <div class="mt-4">
+                      <a class="btn btn-info btn-text-white reply">
+                        <i class="bi bi-reply"></i> الردود
+                      </a>
+                      <a href="#" class="btn btn-info btn-text-white">
+                        <i class="bi bi-heart"></i> أعجبني
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-inner ms-5 mt-3">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-sm-2 col-12 text-center">
+                        <img src="/img/avatar.jpg" alt="" class="img-rounded img-floud" style="max-width: 6rem; width: 100%;">
+                        <p>منذ 40 دقيقة</p>
+                      </div>
+                      <div class="col-sm-10 col-12">
+                        <p class="mb-1">
+                          <a href="#"> <strong>أحمد أحمد</strong> </a>
+                        </p>
+                        <p>مرحبًا، شكرًا لكم على هذه الدورة الرائعة</p>
+                        <div class="mt-4">
+                          <a href="#" class="btn btn-info btn-text-white">
+                            <i class="bi bi-heart"></i> أعجبني
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-5 order-1 order-xl-2">
+          <p>الاقتراحات</p>
+          <div class="card p-2 mb-4">
+            <div class="row">
+              <div class="col-sm-5 card-icons">
+                <a href="watch.html">
+                  <img class="w-100 h-100" src="/img/thumbnail/ruby.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-sm-7">
+                <div class="card-block">
+                  <a href="watch.html">
+                    <b><p>دورة تطوير تطبيقات الويب باستخدام لغة Ruby - أكاديمية حسوب</p></b>
+                    <small class="text-muted"><i class="bi bi-film"></i> <span>1.6 مليون مشاهدة</span> </small>
+                    <a href="channel" class="d-block mt-2">
+                      <img src="/img/ch-logo.png" alt="" width="30" class="rounded-circle">
+                      <span class="card-text">أكاديمية حسوب</span>
+                    </a>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card p-2 mb-4">
+            <div class="row">
+              <div class="col-sm-5 card-icons">
+                <a href="watch.html">
+                  <img class="w-100 h-100" src="/img/thumbnail/mostaql2.png" alt="">
+                </a>
+              </div>
+              <div class="col-sm-7">
+                <div class="card-block">
+                  <a href="watch.html">
+                    <b><p>أفضل النصائح لاختيار أفضل المستقلين والحفاظ على معدل توظيف مرتفع</p></b>
+                    <small class="text-muted"><i class="bi bi-film"></i> <span>1.6 مليون مشاهدة</span> </small>
+                    <a href="channel" class="d-block mt-2">
+                      <img src="/img/ch-logo.png" alt="" width="30" class="rounded-circle">
+                      <span class="card-text">أكاديمية حسوب</span>
+                    </a>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card p-2 mb-4">
+            <div class="row">
+              <div class="col-sm-5 card-icons">
+                <a href="watch.html">
+                  <img class="w-100 h-100" src="/img/thumbnail/khamsat3.png" alt="">
+                </a>
+              </div>
+              <div class="col-sm-7">
+                <div class="card-block">
+                  <a href="watch.html">
+                    <b><p>خطوات بسيطة للتسجيل بموقع خمسات والبدء بربح المال</p></b>
+                    <small class="text-muted"><i class="bi bi-film"></i> <span>1.6 مليون مشاهدة</span> </small>
+                    <a href="channel" class="d-block mt-2">
+                      <img src="/img/ch-logo.png" alt="" width="30" class="rounded-circle">
+                      <span class="card-text">أكاديمية حسوب</span>
+                    </a>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card p-2 mb-4">
+            <div class="row">
+              <div class="col-sm-5 card-icons">
+                <a href="watch.html">
+                  <img class="w-100 h-100" src="/img/thumbnail/khamsat1.png" alt="">
+                </a>
+              </div>
+              <div class="col-sm-7">
+                <div class="card-block">
+                  <a href="watch.html">
+                    <b><p>تعلم كيف تقدم مهاراتك على موقع خمسات</p></b>
+                    <small class="text-muted"><i class="bi bi-film"></i> <span>1.6 مليون مشاهدة</span> </small>
+                    <a href="channel" class="d-block mt-2">
+                      <img src="/img/ch-logo.png" alt="" width="30" class="rounded-circle">
+                      <span class="card-text">أكاديمية حسوب</span>
+                    </a>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card p-2 mb-4">
+            <div class="row">
+              <div class="col-sm-5 card-icons">
+                <a href="watch.html">
+                  <img class="w-100 h-100" src="/img/thumbnail/mostaql.png" alt="">
+                </a>
+              </div>
+              <div class="col-sm-7">
+                <div class="card-block">
+                  <a href="watch.html">
+                    <b><p>وظف أفضل المستقلين الموجودين في الوطن العربي - مستقل</p></b>
+                    <small class="text-muted"><i class="bi bi-film"></i> <span>1.6 مليون مشاهدة</span> </small>
+                    <a href="channel" class="d-block mt-2">
+                      <img src="/img/ch-logo.png" alt="" width="30" class="rounded-circle">
+                      <span class="card-text">أكاديمية حسوب</span>
+                    </a>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card p-2 mb-4">
+            <div class="row">
+              <div class="col-sm-5 card-icons">
+                <a href="watch.html">
+                  <img class="w-100 h-100" src="/img/thumbnail/php.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-sm-7">
+                <div class="card-block">
+                  <a href="watch.html">
+                    <b><p>دورة تطوير تطبيقات الويب باستخدام لغة PHP - أكاديمية حسوب</p></b>
+                    <small class="text-muted"><i class="bi bi-film"></i> <span>1.6 مليون مشاهدة</span> </small>
+                    <a href="channel" class="d-block mt-2">
+                      <img src="/img/ch-logo.png" alt="" width="30" class="rounded-circle">
+                      <span class="card-text">أكاديمية حسوب</span>
+                    </a>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/js/watch.js"></script>
+  </body>
+</html>
